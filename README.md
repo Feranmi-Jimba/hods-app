@@ -9,10 +9,11 @@ phone in aeroplane mode.
 
 ## Download
 
-**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 278 KB, Android 7 and above.
+**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 281 KB, Android 7 and above.
 
 ```
-SHA-256  727788baed2d6aa241ef86f0715aaf2c4ff2dbf65c46dea2a89e767fc13570fb
+version  0.4
+SHA-256  492fbdb125e5599772d4f9e32804dd8f2df3da11516fb77c43dd99b749b3c565
 ```
 
 ## Installing
@@ -25,6 +26,37 @@ SHA-256  727788baed2d6aa241ef86f0715aaf2c4ff2dbf65c46dea2a89e767fc13570fb
 
 That last step is not a warning about this app in particular. Android shows it
 for every app that did not come from the Play Store, however ordinary.
+
+## If it sticks on "Installing…"
+
+Work down this list. The first item is by far the most common.
+
+**1. Uninstall any earlier copy of HODS first.**
+Android refuses to install an app over an existing one with the same name
+unless both were signed with the same key, and some installers — Samsung's in
+particular — report that refusal as a progress bar that never finishes rather
+than as an error. If HODS is already on the phone from an older build, remove
+it (long-press the icon → Uninstall), then install again. Nothing else fixes
+this one.
+
+**2. Samsung phones: turn off Auto Blocker.**
+Settings → Security and privacy → Auto Blocker. It is on by default on recent
+One UI versions and it blocks installing apps from anywhere but the Play Store.
+Turn it off, install, and turn it back on afterwards if you like.
+
+**3. Restart the phone.**
+A package installer that has got itself stuck stays stuck until it is
+restarted, and every later attempt joins the same queue. If the first attempt
+hung, the third will too.
+
+**4. Check the file is really 281 KB.**
+If it was saved from the repository's web page instead of the download link,
+what landed may be a web page named `hods.apk`. Re-download using the link
+above.
+
+**5. Install from Files, not from the browser's download notification.**
+Open the phone's Files app, find `hods.apk` in Downloads, and tap it there.
+Some browsers hand the file to an installer that behaves differently.
 
 ## Using it
 
