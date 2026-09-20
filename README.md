@@ -9,21 +9,22 @@ phone in aeroplane mode.
 
 ## Download
 
-**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 278 KB, Android 7 and above.
+**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 285 KB, Android 7 and above.
 
 ```
-version  0.3
-SHA-256  727788baed2d6aa241ef86f0715aaf2c4ff2dbf65c46dea2a89e767fc13570fb
+version  0.6
+SHA-256  4825fb833530507c83f1f9740c079f2e4367205f7e14f8166a9a26eab5395d27
 ```
 
-This is the build in daily use, unchanged.
+This is the link to share. It installs over an older copy without uninstalling
+anything, and codes made by any version open in any other.
 
-**Newer:** [hods-0.6.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-0.6.apk)
-(285 KB, `4825fb833530507c83f1f9740c079f2e4367205f7e14f8166a9a26eab5395d27`).
-It says what actually went wrong when a scan fails, reads recordings on the phone
-instead of trying to send them anywhere, plays an animated code full screen on a tap,
-and stores animated codes at a density that survives being screenshotted or
-photographed off a screen. Codes made by either build open in both.
+The previous build is kept at
+[hods-0.3.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-0.3.apk)
+(278 KB, `727788baed2d6aa241ef86f0715aaf2c4ff2dbf65c46dea2a89e767fc13570fb`) in
+case it is ever wanted. Do not hand it out: animated codes made by 0.3 cannot be
+read after any gallery or chat app has displayed and rescaled them, which is the
+one thing people do with a picture.
 
 ## Installing
 
