@@ -9,22 +9,33 @@ phone in aeroplane mode.
 
 ## Download
 
-**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 285 KB, Android 7 and above.
+**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 286 KB, Android 7 and above.
 
 ```
-version  0.6
-SHA-256  4825fb833530507c83f1f9740c079f2e4367205f7e14f8166a9a26eab5395d27
+version  0.7
+SHA-256  162cea2d431444fef934e4206113f882ae6be7024f99e591ba47a7b90ffe0e22
 ```
 
 This is the link to share. It installs over an older copy without uninstalling
 anything, and codes made by any version open in any other.
 
-The previous build is kept at
-[hods-0.3.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-0.3.apk)
-(278 KB, `727788baed2d6aa241ef86f0715aaf2c4ff2dbf65c46dea2a89e767fc13570fb`) in
-case it is ever wanted. Do not hand it out: animated codes made by 0.3 cannot be
-read after any gallery or chat app has displayed and rescaled them, which is the
-one thing people do with a picture.
+## Sending a code on WhatsApp
+
+WhatsApp converts **every GIF it sends into a video**. That is what the app does
+with GIFs; it is not a setting. Video compression works by mixing neighbouring
+pixels together, and a code is its exact colours in exact places, so what lands
+on the other phone reads as nothing at all.
+
+So don't send the GIF there. Press **Save for WhatsApp (ZIP)**, then attach it
+with the **paperclip → Document**. A zip is not media, so it arrives byte for
+byte. The person receiving it opens it with **Scan → Open a file** — the app
+looks inside and finds the code, so there is nothing to unzip.
+
+Anywhere that sends a file as a file — email attachment, Drive, Telegram or
+Signal as a document — the plain GIF is fine.
+
+Never photograph a code off a screen and never send a screenshot of one. A
+picture of a code is not the code.
 
 ## Installing
 
