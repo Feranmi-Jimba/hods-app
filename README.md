@@ -18,11 +18,12 @@ SHA-256  727788baed2d6aa241ef86f0715aaf2c4ff2dbf65c46dea2a89e767fc13570fb
 
 This is the build in daily use, unchanged.
 
-There is a newer one, [hods-0.5.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-0.5.apk)
-(284 KB, `ee5207fdcf0f9914a3f25d59291c127a3689bf0d99507bff6463baf9ac62fa9f`),
-which reads recordings on the phone instead of trying to send them anywhere, says what
-actually went wrong when a scan fails, and plays an animated code full screen on a tap.
-Either one installs over the other.
+**Newer:** [hods-0.6.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-0.6.apk)
+(285 KB, `4825fb833530507c83f1f9740c079f2e4367205f7e14f8166a9a26eab5395d27`).
+It says what actually went wrong when a scan fails, reads recordings on the phone
+instead of trying to send them anywhere, plays an animated code full screen on a tap,
+and stores animated codes at a density that survives being screenshotted or
+photographed off a screen. Codes made by either build open in both.
 
 ## Installing
 
