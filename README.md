@@ -9,12 +9,18 @@ phone in aeroplane mode.
 
 ## Download
 
-**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 283 KB, Android 7 and above.
+**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 278 KB, Android 7 and above.
 
 ```
-version  0.4
-SHA-256  3dae9762b0d03a548f1840ab2bce4f24dd5436d15096fd119dcd772a17748ba7
+version  0.3
+SHA-256  727788baed2d6aa241ef86f0715aaf2c4ff2dbf65c46dea2a89e767fc13570fb
 ```
+
+This is the build in daily use. There is a newer one,
+[hods-0.4.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-0.4.apk)
+(283 KB, `3dae9762b0d03a548f1840ab2bce4f24dd5436d15096fd119dcd772a17748ba7`), which
+reads recordings on the phone instead of trying to send them anywhere. Take 0.3
+unless you have a reason not to.
 
 ## Installing
 
