@@ -9,15 +9,32 @@ phone in aeroplane mode.
 
 ## Download
 
-**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 286 KB, Android 7 and above.
+**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 292 KB, Android 7 and above.
 
 ```
-version  0.7
-SHA-256  162cea2d431444fef934e4206113f882ae6be7024f99e591ba47a7b90ffe0e22
+version  0.8
+SHA-256  37fd62e3f5794b1ae37bb7304f47f7a8b94cbaa8700551c61f5733638b2cce33
 ```
 
 This is the link to share. It installs over an older copy without uninstalling
 anything, and codes made by any version open in any other.
+
+## What it can carry
+
+The code was never the place to win. A file is shrunk to fit before it is
+encoded, by something that understands what kind of file it is:
+
+| you give it | it does | measured |
+|---|---|---|
+| an uncompressed scan or photo | re-encodes it at print size | 5.0 MB → **one code** |
+| a sound recording | re-encodes the audio | 689 KB → **one code** |
+| a video | re-encodes it smaller | 1.6 MB → **one animation** |
+| logs, telemetry, CSV, JSON, FASTQ | nothing — packing already gets 50–100× | untouched, byte for byte |
+| an MP4, JPEG, ZIP or DOCX | nothing to take; already compressed | as-is |
+
+Anything re-encoded comes back playable or openable, and is renamed to match
+what it now is. The app says plainly when it has done this, because the result
+is no longer byte-identical to what you put in. Text and data are never touched.
 
 ## Sending a code on WhatsApp
 
