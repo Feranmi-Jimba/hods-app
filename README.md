@@ -9,11 +9,11 @@ phone in aeroplane mode.
 
 ## Download
 
-**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 292 KB, Android 7 and above.
+**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 300 KB, Android 7 and above.
 
 ```
-version  0.8
-SHA-256  37fd62e3f5794b1ae37bb7304f47f7a8b94cbaa8700551c61f5733638b2cce33
+version  0.9
+SHA-256  5d1a75a12c68034d5d8ddbb1c8a822368b27b69052e0d6f2d816bfdf1ce71bfc
 ```
 
 This is the link to share. It installs over an older copy without uninstalling
@@ -21,8 +21,8 @@ anything, and codes made by any version open in any other.
 
 ## What it can carry
 
-The code was never the place to win. A file is shrunk to fit before it is
-encoded, by something that understands what kind of file it is:
+A file is shrunk to fit before it is encoded, by something that understands what
+kind of file it is:
 
 | you give it | it does | measured |
 |---|---|---|
@@ -32,9 +32,34 @@ encoded, by something that understands what kind of file it is:
 | logs, telemetry, CSV, JSON, FASTQ | nothing — packing already gets 50–100× | untouched, byte for byte |
 | an MP4, JPEG, ZIP or DOCX | nothing to take; already compressed | as-is |
 
-Anything re-encoded comes back playable or openable, and is renamed to match
-what it now is. The app says plainly when it has done this, because the result
-is no longer byte-identical to what you put in. Text and data are never touched.
+Anything re-encoded comes back playable or openable and is renamed to match what
+it now is. The app says plainly when it has done this, because the result is no
+longer byte-identical. Text and data are never touched.
+
+## Locking and signing
+
+**Lock with a password** — the document is encrypted inside the code. Nobody
+opens it without the password, including us. It is never stored and cannot be
+recovered.
+
+**Sign it as me** — proves the document came from your key, checkable offline by
+anyone, and costs 64 bytes. The signature covers the file *and its name*, so a
+signed document cannot be relabelled.
+
+The app will not tell you a document is "verified". A signature proves that the
+holder of one particular key produced those exact bytes; it says nothing about
+who holds the key, and offline nothing can. So it reports the two facts
+separately — whether the signature is sound, and whether this phone has been
+told whose key it is — and shows the key's fingerprint so you can compare it
+with whatever the issuer published, then name it.
+
+## Reading it without saving it
+
+Pictures, video, sound and text open in the app. Word and PowerPoint files show
+their text, read straight out of the package — enough to check you have the
+right document, though not its layout. A PDF is not drawn: an Android WebView
+has no PDF renderer, and adding one would roughly quadruple the app. Save it and
+any reader opens it.
 
 ## Sending a code on WhatsApp
 
