@@ -9,11 +9,11 @@ phone in aeroplane mode.
 
 ## Download
 
-**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 268 KB, Android 7 and above.
+**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 318 KB, Android 7 and above.
 
 ```
-version  0.10
-SHA-256  ba29cbee7e0623e3213fdabe0c324e78ef1787546ddd03766cc428595633b719
+version  0.11
+SHA-256  b7759670aabd42e072658efe3730a0ee521127ab597dd62664361d3f07bbeb80
 ```
 
 This is the link to share. It installs over an older copy without uninstalling
@@ -55,11 +55,25 @@ with whatever the issuer published, then name it.
 
 ## Reading it without saving it
 
-Pictures, video, sound and text open in the app. Word and PowerPoint files show
-their text, read straight out of the package — enough to check you have the
-right document, though not its layout. A PDF is not drawn: an Android WebView
-has no PDF renderer, and adding one would roughly quadruple the app. Save it and
-any reader opens it.
+Open a recovered file in the app, with nothing downloaded and nothing else
+installed. You can still save it whenever you want to.
+
+| | shown as |
+|---|---|
+| Word | **the document, laid out** — pages, styles, tables, headers, pictures |
+| PDF | **the document, exactly** — drawn by the phone's own renderer, page by page |
+| pictures, video, sound | themselves |
+| text, CSV, JSON, logs | themselves |
+| PowerPoint | its text, and the app says so — nothing small enough exists to lay out a deck |
+
+Word is close to Word, not identical to it; no browser library manages identical.
+PDF is exact, because a PDF is fixed-layout. The PDF viewer needs the installed
+app — a browser has no renderer it can reach, and the app says that rather than
+appearing broken.
+
+Measured on real files: a 100-page deed comes back as 100 pages with its 20
+tables intact, and a photographic schedule comes back as 100 pages with all 100
+photographs.
 
 ## Sending a code on WhatsApp
 
