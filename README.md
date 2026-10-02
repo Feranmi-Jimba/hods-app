@@ -9,11 +9,11 @@ phone in aeroplane mode.
 
 ## Download
 
-**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 300 KB, Android 7 and above.
+**[hods.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods.apk)** — 268 KB, Android 7 and above.
 
 ```
-version  0.9
-SHA-256  5d1a75a12c68034d5d8ddbb1c8a822368b27b69052e0d6f2d816bfdf1ce71bfc
+version  0.10
+SHA-256  ba29cbee7e0623e3213fdabe0c324e78ef1787546ddd03766cc428595633b719
 ```
 
 This is the link to share. It installs over an older copy without uninstalling
