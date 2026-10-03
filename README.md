@@ -13,11 +13,42 @@ phone in aeroplane mode.
 
 ```
 version  0.11
-SHA-256  b7759670aabd42e072658efe3730a0ee521127ab597dd62664361d3f07bbeb80
+SHA-256  37fd62e3f5794b1ae37bb7304f47f7a8b94cbaa8700551c61f5733638b2cce33
 ```
 
-This is the link to share. It installs over an older copy without uninstalling
-anything, and codes made by any version open in any other.
+This is the link to share, and the build in daily use.
+
+### Please test this one — [hods-sealed.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-sealed.apk)
+
+```
+version  0.13          321 KB
+SHA-256  0383b3fb0a124d46c6a29a377853995188209d97187543db0a2ea04ed70087ca
+```
+
+0.13 is better in two ways that matter, and carries one change nobody has yet
+run on a phone, which is why it is a separate file rather than the link above.
+
+**Nothing is lost unless you ask.** There is a *keep it exact* switch and it is
+ticked. Nothing is re-encoded, resized or transcoded: a 1.6 MB video comes back
+byte for byte and plays in the app. A file that does not fit one code becomes as
+many codes as it honestly needs, and the app says how many before you commit.
+Untick it and pictures, video and sound are re-encoded far smaller — and the
+result then says, plainly, that what came back is no longer the identical file.
+
+**The app no longer ships readable.** Unzip it and you will not find the page,
+the codec or the renderers. They are sealed with a key derived from the signing
+certificate, so a repackaged copy resigned with another key refuses to run
+instead of running as a convincing fake.
+
+That sealing is also the untested part. The cryptography is proven — the real
+Java was compiled and made to unseal the real files, byte for byte, and a wrong
+key is refused — but no phone has served a sealed asset yet. If something is
+wrong you will get a page that says so and prints the certificate digest it
+computed, not a blank screen or a crash, and `hods.apk` above still works.
+
+Install it over 0.11; codes made by any version open in any other.
+
+## What it can carry
 
 ## What it can carry
 
