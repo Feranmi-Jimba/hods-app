@@ -21,12 +21,25 @@ This is the link to share, and the build in daily use.
 ### Please test this one — [hods-sealed.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-sealed.apk)
 
 ```
-version  0.15          322 KB
-SHA-256  5e578553d43ca3653b0f9f316ea02325122b5be6fa07bffc9f5ca484656652a9
+version  0.16          325 KB
+SHA-256  774420a148b0146384d2f47d33ed457ef38602d27621893e78d07d4e283b04b3
 ```
 
-0.13 is better in two ways that matter, and carries one change nobody has yet
+0.16 is better in three ways that matter, and carries one change nobody has yet
 run on a phone, which is why it is a separate file rather than the link above.
+
+**Animations read fifteen times faster.** A frame of an animation is not a
+photograph of a code — it is the code, exactly as it was drawn. The decoder now
+knows that, and skips everything it used to do to undo a camera: finding the
+code in the picture, straightening the perspective, averaging each cell against
+its neighbours, and working out what the printer did to the colours. Measured in
+the same browser on the same files, 300 KB came back in 0.41 s where it used to
+take 6.27 s, and 2 MB in 3.07 s. A film that would have taken eight minutes to
+read now takes under a minute.
+
+Nothing is traded for it. A frame that a chat app re-saved, resized or dithered
+is turned down by the fast path and read the old way instead, so no code that
+used to be readable has become unreadable.
 
 **Nothing is lost unless you ask.** There is a *keep it exact* switch and it is
 ticked. Nothing is re-encoded, resized or transcoded: a 1.6 MB video comes back
@@ -46,9 +59,7 @@ key is refused — but no phone has served a sealed asset yet. If something is
 wrong you will get a page that says so and prints the certificate digest it
 computed, not a blank screen or a crash, and `hods.apk` above still works.
 
-Install it over 0.11; codes made by any version open in any other.
-
-## What it can carry
+Install it over 0.11 or 0.15; codes made by any version open in any other.
 
 ## What it can carry
 
