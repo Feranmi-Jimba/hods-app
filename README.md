@@ -21,8 +21,8 @@ This is the link to share, and the build in daily use.
 ### Please test this one — [hods-sealed.apk](https://github.com/Feranmi-Jimba/hods-app/raw/main/hods-sealed.apk)
 
 ```
-version  0.13          321 KB
-SHA-256  0383b3fb0a124d46c6a29a377853995188209d97187543db0a2ea04ed70087ca
+version  0.14          321 KB
+SHA-256  94263550144d145342ba4632fa04c205d479a9917f9feab0a45b9a3f72c55e5e
 ```
 
 0.13 is better in two ways that matter, and carries one change nobody has yet
